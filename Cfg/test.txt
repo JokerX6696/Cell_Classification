@@ -1,0 +1,13 @@
+T cell	B cell	NK 	Monocytes	Macrophages	DC	Neutrophils	Epithelial cells	Endothelial cells	Smooth muscle cells	Fibroblast	Mast cell	Platelets
+CD3E	CD19	NKG7	CD14	CD14	flt3	LY6G	EPCAM	PECAM1	ACTA2	COL1A1	TPSB2	PPBP
+CD3D	CD79A	NCAM1	CD300E	CD68	CD1C	NCF1	CDH1	CDH5	Tagln	COL1A2	TPSAB1	PF4
+CD3G	CD79B	FCGR3A	CD244	CD163	SIGLECH	CD177	KRT18	VWF	Mustn1	COL3A1	TPSAB2	TUBB1
+		CCL3	HLA-DRA	CD209		SORL1	KRT8		Myh11	POSTN	CPA3	GP9
+		XCL2	S100A4	AIF1		Csf3r			Mylk	DCN	MS4A2	
+			S100A12	CSF1R		Retnlg			Pcp4l1	PDGFRA	KIT	
+			CLEC12A	C1QA		Slpi			Sncg	SOX9		
+			LTA4H	C1QB		S100A8			Lmod1			
+			VCAN	C1QC		S100A9			Des			
+			ly6c2	MRC1					Pl			
+			plac8									
+			CCR2									
