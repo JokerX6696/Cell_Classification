@@ -24,6 +24,8 @@ class MLP(nn.Module):
         x = F.relu(self.fc2(x))
         # 通过输出层
         x = self.out(x)
+        # 使用softmax将输出转换为概率分布
+        x = F.softmax(x, dim=1)  # dim=1 表示在每一行上做 softmax
         return x
     
 if __name__ == '__main__':

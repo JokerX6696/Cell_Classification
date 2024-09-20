@@ -10,7 +10,7 @@ def read_listfile(fpth):
     return(xxx_list)
 
 # 基于 celltype_marker.txt 生成 celltype_list.txt feature_genelist.txt 两个文件！
-def get_celltype_marker(fpth,ct_output,mk_output):
+def wkdir_init(fpth,ct_output,mk_output):
     import re
     with open(fpth,'r')as f:
         info = f.readlines()
@@ -32,10 +32,11 @@ def get_celltype_marker(fpth,ct_output,mk_output):
             f.write('%s\n' %i)
     with open(mk_output,'w')as f:
         for i in marker:
-            f.write('%s\n' %i)        
+            upper_i = str.upper(i)
+            f.write('%s\n' %upper_i)        
     return 0
 
 
 
 if __name__ == '__main__':
-    con = get_celltype_marker(fpth=r'D:/desk/github/Cell_Classification/Cfg/celltype_marker.txt',ct_output=r'D:/desk/github/Cell_Classification/Cfg/celltype_list.txt',mk_output=r'D:/desk/github/Cell_Classification/Cfg/feature_genelist.txt')
+    con = wkdir_init(fpth=r'D:/desk/github/Cell_Classification/Cfg/celltype_marker.txt',ct_output=r'D:/desk/github/Cell_Classification/Cfg/celltype_list.txt',mk_output=r'D:/desk/github/Cell_Classification/Cfg/feature_genelist.txt')
