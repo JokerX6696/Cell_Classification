@@ -8,6 +8,11 @@ def read_listfile(fpth):
     xxx_list = list(set(xxx_list)) # 删除重复值
     xxx_list.sort() # 保证顺序不变
     return(xxx_list)
+
+# 基于 celltype_marker.txt 生成 celltype_list.txt feature_genelist.txt 两个文件！
+
+
+
 if __name__ == '__main__':
     a = read_listfile(r'D:/desk/github/Cell_Classification/Cfg/celltype_list.txt')
     print(a)
