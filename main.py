@@ -17,6 +17,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # 分类 label
 ohe = one_hot_encoding()
 # 特征值 list
+
 features = get_feature_list()
 # MLP 参数
 model_path = '' # 如果模型存在 做迁移学习 可以填写该参数！
@@ -38,10 +39,12 @@ tm_start = time.strftime("%Y-%m-%d-%H")
 
 new_model = model_train(
     model=model,
+    features=features,
     device=device,
     one_hot_encode=ohe,
     data_dir=r'D:/desk/github/Cell_Classification/data',
-    learning_rate=0.001
+    learning_rate=0.0001,
+    num_epochs=100
     )
 
 

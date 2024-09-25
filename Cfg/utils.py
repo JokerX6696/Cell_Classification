@@ -27,6 +27,9 @@ def wkdir_init(fpth,ct_output,mk_output):
             for gene in line_lst:
                 if bool(re.search('[a-zA-Z]', gene)):
                     marker.append(gene)
+
+    marker = list(set(marker))
+    marker.sort()
     with open(ct_output,'w')as f:
         for i in celltype:
             f.write('%s\n' %i)
